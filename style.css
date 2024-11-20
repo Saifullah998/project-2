@@ -374,3 +374,130 @@ background: #F0F0F0;
 
 /*-------------------------------------- HERO SECTION *-----------------------------------------------------------/ */
 
+.herosection{
+    background-image: url(images/hero-image.png);
+    background-color: #cccccc;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+   height: 663px;
+}
+.container{
+    display: flex;
+}
+.content .h1-content{
+    color: #000;
+    font-family: "Integral CF";
+    font-style: normal;
+    font-size: 64px;
+    font-weight: 700px;
+    line-height: 64px;
+    padding-top: 103px;
+}
+.content p {
+    color: rgba(0, 0, 0, 0.60);
+font-family: Satoshi;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 22px; /* 137.5% */
+padding-top: 32px;
+max-width: 545px;
+}
+.container{
+    position: relative;
+}
+.container button{
+display: flex;
+width: 210px;
+margin-top: 32px;
+height: 52px;
+padding: 16px 54px;
+justify-content: center;
+align-items: center;
+gap: 12px;
+flex-shrink: 0;
+border-radius: 62px;
+background: #000;
+}
+.container button a{
+    color: #FFF;
+font-family: Satoshi;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+    text-decoration: none;
+}
+.stats{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    padding-top: 48px;
+}
+.review{
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: -2px;
+
+
+}
+.review .h1-review{
+    color: #000;
+font-family: Satoshi;
+font-size: 40px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+.description-stats{
+    color: rgba(0, 0, 0, 0.60);
+font-family: Satoshi;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 1.4; 
+
+}
+.line img{
+    width: 1px;
+    height: 74px;
+    background: rgba(0, 0, 0, 0.10);
+}
+.icons1{
+    position: absolute;
+    margin-top: 320px;
+    text-align: center;
+    width: 56px;
+    height: 56px;
+    flex-shrink: 0;
+}
+.icons2{
+    position: absolute;
+    margin-top: 86px;
+    margin-right: 81px;
+    margin-left: 500px;
+    width: 56px;
+    height: 56px;
+    flex-shrink: 0; 
+}
+                        /* media Quaries for Hero Section */
+
+@media screen and (min-width: 300px)  {
+/* .herosection{
+
+        background-image: url(images/hero-image.png);
+        background-color: #cccccc;
+        height: 853px;
+        max-width: 390px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+       
+} */
+}
