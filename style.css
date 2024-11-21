@@ -374,130 +374,530 @@ background: #F0F0F0;
 
 /*-------------------------------------- HERO SECTION *-----------------------------------------------------------/ */
 
-.herosection{
-    background-image: url(images/hero-image.png);
-    background-color: #cccccc;
-    height: 500px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.herosection {
+    background-color: #f2f0f1;
+    height: auto; /* Adjust height dynamically */
     position: relative;
-   height: 663px;
-}
-.container{
+    padding: 20px 0; /* Optional: Add spacing */
+  }
+  
+  .container {
+    max-width: 1240px;
+    margin: auto;
     display: flex;
-}
-.content .h1-content{
+    align-items: center; /* Vertically aligns content and image */
+    justify-content: space-between; /* Adds space between content and image */
+    gap: 20px; /* Adds spacing between elements */
+  }
+  
+  .content {
+    width: 50%; /* Takes half of the available space */
+  }
+  
+  .content .h1-content {
     color: #000;
-    font-family: "Integral CF";
-    font-style: normal;
+    font-family: "Integral CF", sans-serif;
     font-size: 64px;
-    font-weight: 700px;
-    line-height: 64px;
+    font-weight: 700; /* Corrected: No `px` unit for font-weight */
+    line-height: 1.2; /* Adjusted for readability */
     padding-top: 103px;
-}
-.content p {
+    max-width: 577px;
+  }
+  
+  .content p {
+    color: rgba(0, 0, 0, 0.6);
+    font-family: "Satoshi", sans-serif;
+    font-size: 16px;
+    line-height: 1.4;
+    padding-top: 32px;
+    max-width: 545px;
+  }
+  
+  .container button {
+    display: flex;
+    width: 210px;
+    margin-top: 32px;
+    height: 52px;
+    padding: 16px 20px; /* Adjusted padding for balance */
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    border-radius: 62px;
+    background: #000;
+  }
+  
+  .container button a {
+    color: #fff;
+    font-family: "Satoshi", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+  }
+  
+  .stats {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+    padding-top: 48px;
+  }
+  .review{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: -2px;
+  }
+  .h2-review{
+    color: #000;
+    font-family: Satoshi;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .description-stats{
     color: rgba(0, 0, 0, 0.60);
 font-family: Satoshi;
 font-size: 16px;
 font-style: normal;
 font-weight: 400;
 line-height: 22px; /* 137.5% */
-padding-top: 32px;
-max-width: 545px;
+  }
+  .hero-image {
+    width: 50%; /* Matches the content width */
+  }
+  .line{
+    width: 1px;
+height: 10px;
+background: rgba(0, 0, 0, 0.10);
+  }
+  
+  .hero-image img {
+    width: 100%; /* Ensures image scales with its container */
+    height: auto; /* Keeps aspect ratio */
+    display: block; /* Removes inline spacing below images */
+    object-fit: cover; /* Ensures proper scaling */
+  }
+
+  .brands{
+    background-color: #000000;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1440px;
+    height: 122px;
+   gap: 106;
+    text-align: center;
+    padding-top: 44px;
+    padding-left: 70px;
+    
+  }
+  .brands img{
+    width: 140.482px;
+    height: 33.164px;
+    flex-shrink: 0;
+  }
+                                                            /* NEW ARRIVAL */
+   .new-arrival {
+       width: 1440px;
+       height: 600px;
+       background: #FFF;
+   }
+   
+   .new-arrival h2 {
+       color: #000;
+       text-align: center;
+       font-family: "Integral CF";
+       font-size: 48px;
+       font-style: normal;
+       font-weight: 700;
+       line-height: normal;
+       text-align: center;
+       justify-content: center;
+       padding-top: 72px;
+   }
+   
+   
+   .arrival-card {
+       display: flex;
+       padding-left: 100px;
+       max-width: 1240px;
+       gap: 20px; /* Correct gap syntax */
+   }
+   
+   .card1 {
+       display: flex;
+       flex-direction: column;
+       width: 296px; /* Add a fixed width to the card */
+       width: 296px;
+       height: 444px;
+       padding-left: 99px;
+   }
+   
+   
+   .card1 img {
+    display: flex;
+    width: 295px;
+    padding: 0px 13px 0px 14px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background: #F0EEED;
+    margin-top: 55px;
+   }
+   .card1 h6{
+    color: #000;
+    font-family: Satoshi;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    font: bold;
+    padding-top: 16px;
+   }
+   .revies-star
+           {
+            display: flex;
+            gap: 20px;
+           }   
+    .card1 h5{
+        color: #000;
+        font-family: Satoshi;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        padding-top: 8.26;
+        }  
+        .price{
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+
+        }   
+        .discount-section{
+            display: flex;
+        }  
+        .discount-section h5{
+            color: rgba(0, 0, 0, 0.40);
+            font-family: Satoshi;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            text-decoration-line: strikethrough;
 }
-.container{
-    position: relative;
+.price .discount-price{
+    color: rgba(0, 0, 0, 0.40);
+            font-family: Satoshi;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            text-decoration-line: strikethrough;
 }
-.container button{
-display: flex;
-width: 210px;
-margin-top: 32px;
-height: 52px;
-padding: 16px 54px;
+.off{
+    display: flex;
+width: 58px;
+padding: 6px 14px;
 justify-content: center;
 align-items: center;
 gap: 12px;
-flex-shrink: 0;
 border-radius: 62px;
-background: #000;
+background: rgba(255, 51, 51, 0.10);
 }
-.container button a{
-    color: #FFF;
+.off p{
+    color: #F33;
 font-family: Satoshi;
-font-size: 16px;
+font-size: 12px;
 font-style: normal;
 font-weight: 500;
 line-height: normal;
-    text-decoration: none;
 }
-.stats{
-    display: inline-flex;
-    align-items: center;
+hr{
+    width: 1240px;
+    height: 1px;
+    background: rgba(0, 0, 0, 0.10);
+    margin-top: 64px;
+    margin-left: 100px;
+}
+/* Arrival Button Container */
+.arrival-btn {
+    display: flex;
     justify-content: center;
-    gap: 32px;
-    padding-top: 48px;
+    align-items: center;
+    padding-top: 36px;
 }
-.review{
-display: flex;
-flex-direction: column;
-align-items: flex-start;
-gap: -2px;
 
-
-}
-.review .h1-review{
+/* Button Styles */
+.arrival-btn .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    width: 218px;
+    height: 52px;
+    padding: 16px 54px;
+    border: 1px solid rgba(0, 0, 0, 0.10);
+    border-radius: 62px;
+    background: transparent; /* Reset any default button background */
     color: #000;
-font-family: Satoshi;
-font-size: 40px;
+    font-family: "Satoshi", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    cursor: pointer; /* Add pointer for better UX */
+    text-align: center;
+}
+
+
+                                    /* BROWSE BY DRESS STYLE */
+
+
+
+/* Container for the section */
+.browse-style-container {
+    padding: 20px;
+    border-radius: 40px;
+background: #F0F0F0;
+    text-align: center;
+    max-width: 1239px;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Title styling */
+  .title {
+    color: #000;
+text-align: center;
+font-family: "Integral CF";
+font-size: 48px;
 font-style: normal;
 font-weight: 700;
 line-height: normal;
-}
-.description-stats{
+padding-top: 70px;
+  }
+  
+  /* Grid container using Flexbox */
+  .grid-container {
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding-top: 70px;
+  }
+  
+  /* Each item in the grid */
+  .grid-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex: 1 1 calc(50% - 20px);  /*Each item takes half the container width minus the gap */
+    max-width: 45%; /* Limit the maximum width */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #ffffff; /* White background for items */
+  }
+  
+  
+  /* Images inside the grid */
+  .grid-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  /* Text below the images */
+  .grid-item p {
+    position: absolute;
+    left:10px;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 10px 0;
+    color: #333;
+  }
+
+
+                                /* review Section */
+
+   /* Container Styling */
+.review-container {
+    margin: 40px auto;
+    padding: 20px;
+    max-width: 1240px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  .customer1{
+    display: flex;
+width: 400px;
+height: 240px;
+padding: 28px 32px;
+align-items: flex-start;
+align-content: flex-start;
+gap: 24px 342px;
+flex-shrink: 0;
+flex-wrap: wrap;
+  }
+  .customer1 div{
+    display: flex; 
+flex-direction: column;
+ align-items: flex-start; 
+gap: 15px;
+flex: 1 0 0;
+  }
+  
+  .review-heading {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+  
+  .review-heading h3 {
+    color: #000;
+font-family: "Integral CF";
+font-size: 48px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+  }
+  
+  .review-heading .arrow {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .review-heading .arrow svg {
+    cursor: pointer;
+    fill: #000;
+    transition: transform 0.3s ease;
+  }
+  
+  .review-heading .arrow svg:hover {
+    transform: scale(1.2);
+  }
+  
+  /* Customer Reviews Styling */
+  .customer-reviews {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .customer1 {
+    flex: 0 0 30%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .customer1:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  
+  
+  .name-verified {
+    display: flex;
+align-items: center;
+gap: 4px;
+  }
+  .customer1 div p{
     color: rgba(0, 0, 0, 0.60);
 font-family: Satoshi;
 font-size: 16px;
 font-style: normal;
 font-weight: 400;
-line-height: 1.4; 
+line-height: 22px; /* 137.5% */
+  }
+  .name-verified h5 {
+    margin: 0; /* Removes default margin for the name */
+  }
+  
+  .name-verified svg {
+    flex-shrink: 0; /* Prevents SVG from shrinking */
+  }
 
-}
-.line img{
-    width: 1px;
-    height: 74px;
-    background: rgba(0, 0, 0, 0.10);
-}
-.icons1{
-    position: absolute;
-    margin-top: 320px;
-    text-align: center;
-    width: 56px;
-    height: 56px;
-    flex-shrink: 0;
-}
-.icons2{
-    position: absolute;
-    margin-top: 86px;
-    margin-right: 81px;
-    margin-left: 500px;
-    width: 56px;
-    height: 56px;
-    flex-shrink: 0; 
-}
-                        /* media Quaries for Hero Section */
 
-@media screen and (min-width: 300px)  {
-/* .herosection{
 
-        background-image: url(images/hero-image.png);
-        background-color: #cccccc;
-        height: 853px;
-        max-width: 390px;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
+                                                    /* Footer */
+    .footer-container {
         position: relative;
-       
-} */
-}
+        padding-top: 500.42px;
+        width: 100%;
+        max-width: 1440px;
+        height: auto;
+        flex-shrink: 0;
+        margin: 0 auto;
+        background: #F0F0F0;
+    }
+    
+    .newslatter {
+        position: absolute;
+        top: -50px;
+        left: 50%; /* Position relative to the center */
+        transform: translateX(-50%); /* Shift it back by half its width */
+        display: flex;
+        width: 1240px;
+        padding: 36px 64px;
+        justify-content: space-between;
+        
+        align-items: center;
+        border-radius: 20px;
+        background: #000;
+    }
+    
+    
+    .contents-newslatter {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .contents-newslatter h2 {
+        width: 551px;
+    height: 94px;
+        flex-shrink: 0;
+        color: #FFF;
+font-family: "Integral CF";
+font-size: 40px;
+font-style: normal;
+font-weight: 700;
+line-height: 45px; /* 112.5% */
+    }
+    
+    .inputs input {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-right: 10px;
+        flex: 1;
+    }
+    
+    .inputs button {
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    
+
+
+
+  
+  
+  
