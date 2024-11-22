@@ -16,10 +16,7 @@
 /* Top Banner */
 .top-banner {
     position: relative;
-    /* display: flex;  */
-    width: 100%; 
-    height: 38px; 
-    padding: 9px 16px; 
+    display: flex; 
     justify-content: center; 
     align-items: center; 
     gap: 12px; 
@@ -27,14 +24,18 @@
     white-space: nowrap; 
     display: inline-flex;
     height: 38px;
-    /* padding: 9px 100px 9px 544px; */
+    padding: 9px 100px 9px 544px;
     justify-content: flex-end;
     align-items: flex-start;
-    gap: 425px;
+    /* gap: 425px; */
     flex-shrink: 0;
+    width: 100%; 
+    height: 38px;
 }
 
 .top-banner p {
+    position: absolute;
+    left: 540px;
     color: #FFF;
     font-family: "Satoshi", sans-serif;
     font-size: 14px;
@@ -51,8 +52,10 @@
     text-decoration: underline;
     
 }
-.svg-top-banner{
-    padding-left: -20;
+.top-banner svg{
+    position: absolute;
+    right: 80px;
+    
 }
 
 
@@ -412,6 +415,13 @@ background: #F0F0F0;
     padding-top: 32px;
     max-width: 545px;
   }
+  hr{
+    width: 1240px;
+height: 1px;
+background: rgba(0, 0, 0, 0.10);
+margin-top: 64px;
+margin-left: 60px;
+  }
   
   .container button {
     display: flex;
@@ -466,10 +476,10 @@ line-height: 22px; /* 137.5% */
   .hero-image {
     width: 50%; /* Matches the content width */
   }
-  .line{
+  .line img{
     width: 1px;
-height: 10px;
-background: rgba(0, 0, 0, 0.10);
+    height: 74px;
+    background: rgba(0, 0, 0, 0.10);
   }
   
   .hero-image img {
@@ -479,124 +489,128 @@ background: rgba(0, 0, 0, 0.10);
     object-fit: cover; /* Ensures proper scaling */
   }
 
-  .brands{
+  /* Fluid container styling for brands */
+.brands {
     background-color: #000000;
     display: flex;
-    justify-content: space-between;
-    max-width: 1440px;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+    width: 100%; /* Full width */
+    padding: 0 20px; /* Add padding for better responsiveness */
+    box-sizing: border-box; /* Include padding in total width */
     height: 122px;
-   gap: 106;
-    text-align: center;
-    padding-top: 44px;
-    padding-left: 70px;
-    
   }
-  .brands img{
-    width: 140.482px;
-    height: 33.164px;
-    flex-shrink: 0;
-  }
-                                                            /* NEW ARRIVAL */
-   .new-arrival {
-       width: 1440px;
-       height: 600px;
-       background: #FFF;
-   }
-   
-   .new-arrival h2 {
-       color: #000;
-       text-align: center;
-       font-family: "Integral CF";
-       font-size: 48px;
-       font-style: normal;
-       font-weight: 700;
-       line-height: normal;
-       text-align: center;
-       justify-content: center;
-       padding-top: 72px;
-   }
-   
-   
-   .arrival-card {
-       display: flex;
-       padding-left: 100px;
-       max-width: 1240px;
-       gap: 20px; /* Correct gap syntax */
-   }
-   
-   .card1 {
-       display: flex;
-       flex-direction: column;
-       width: 296px; /* Add a fixed width to the card */
-       width: 296px;
-       height: 444px;
-       padding-left: 99px;
-   }
-   
-   
-   .card1 img {
+  
+  .brands-images {
     display: flex;
-    width: 295px;
-    padding: 0px 13px 0px 14px;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-between; /* Spread images evenly */
     align-items: center;
+    gap: 40px; /* Space between images */
+    width: 100%; /* Adjust to parent container */
+    max-width: 1240px; /* Optional: Limit the maximum width */
+  }
+  
+  .brands-images img {
+    max-width: 140px; /* Scaled size for images */
+    height: auto; /* Maintain aspect ratio */
+    flex-shrink: 1; /* Allow images to shrink if necessary */
+  }
+  
+  
+                                                            /* NEW ARRIVAL */
+                                                            /* Container Styling */
+.new-arrival {
+    width: 100%; /* Make the container fluid */
+    max-width: 1440px; /* Limit the maximum width */
+    margin: 0 auto; /* Center the container */
+    height: auto; /* Allow height to adjust dynamically */
+    background: #FFF;
+    padding: 0 20px; /* Add padding for responsiveness */
+    box-sizing: border-box; /* Include padding in total width */
+  }
+  
+  .new-arrival h2 {
+    color: #000;
+    text-align: center;
+    font-family: "Integral CF", sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    margin-top: 72px;
+  }
+  
+  /* Card Container */
+  .arrival-card {
+    padding-top: 55px;
+    display: flex;
+    flex-wrap: wrap; /* Allow cards to wrap on smaller screens */
+    justify-content: space-between; /* Spread cards evenly */
+    gap: 20px; /* Space between cards */
+    max-width: 1240px;
+    margin: 0 auto; /* Center the card container */
+  }
+  
+  /* Card Styling */
+  .card1 {
+    display: flex;
+    flex-direction: column;
+    text-align: flex-start;
+    width: calc(25% - 20px); /* Adjust card width dynamically */
+    max-width: 296px; /* Prevent cards from exceeding this width */
+    flex: 1 1 calc(25% - 20px); /* Flex properties for responsiveness */
+    height: auto;
+    background: #f9f9f9;
+    padding: 0;
+  }
+  
+  .card1 img {
+    width: 100%; /* Adjust image width to the card */
+    max-width: 295px;
+    height: auto; /* Maintain aspect ratio */
     border-radius: 20px;
     background: #F0EEED;
-    margin-top: 55px;
-   }
-   .card1 h6{
+    margin: 0 auto 16px;
+  }
+  
+  .card1 h6 {
     color: #000;
-    font-family: Satoshi;
+    font-family: "Satoshi", sans-serif;
     font-size: 20px;
-    font-style: normal;
     font-weight: 700;
-    line-height: normal;
-    font: bold;
-    padding-top: 16px;
-   }
-   .revies-star
-           {
-            display: flex;
-            gap: 20px;
-           }   
-    .card1 h5{
-        color: #000;
-        font-family: Satoshi;
-        font-size: 24px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-        padding-top: 8.26;
-        }  
-        .price{
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-
-        }   
-        .discount-section{
-            display: flex;
-        }  
-        .discount-section h5{
-            color: rgba(0, 0, 0, 0.40);
-            font-family: Satoshi;
-            font-size: 24px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: normal;
-            text-decoration-line: strikethrough;
-}
-.price .discount-price{
+    margin: 16px 0;
+    text-align: center;
+  }
+  
+  .revies-star {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  
+  .card1 h5 {
+    
     color: rgba(0, 0, 0, 0.40);
-            font-family: Satoshi;
-            font-size: 24px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: normal;
-            text-decoration-line: strikethrough;
-}
-.off{
+font-family: Satoshi;
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+text-decoration-line: strikethrough;
+  }
+  
+  .price {
+    align-items: flex-start;
+    display: flex;
+    
+    gap: 10px;
+    margin-top: 8px;
+  }
+  
+  .discount-price {
+    color: rgba(0, 0, 0, 0.4);
+    text-decoration: line-through;
+  }
+  
+  .off {
     display: flex;
 width: 58px;
 padding: 6px 14px;
@@ -605,122 +619,140 @@ align-items: center;
 gap: 12px;
 border-radius: 62px;
 background: rgba(255, 51, 51, 0.10);
-}
-.off p{
+  }
+  .off p{
+    
     color: #F33;
 font-family: Satoshi;
 font-size: 12px;
 font-style: normal;
 font-weight: 500;
 line-height: normal;
-}
-hr{
-    width: 1240px;
-    height: 1px;
-    background: rgba(0, 0, 0, 0.10);
-    margin-top: 64px;
-    margin-left: 100px;
-}
-/* Arrival Button Container */
-.arrival-btn {
+  }
+  
+  /* Arrival Button */
+  .arrival-btn {
     display: flex;
     justify-content: center;
-    align-items: center;
-    padding-top: 36px;
-}
-
-/* Button Styles */
-.arrival-btn .btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 12px;
-    width: 218px;
-    height: 52px;
+    margin-top: 36px;
+  }
+  
+  .arrival-btn .btn {
     padding: 16px 54px;
-    border: 1px solid rgba(0, 0, 0, 0.10);
+    border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 62px;
-    background: transparent; /* Reset any default button background */
+    background: transparent;
     color: #000;
     font-family: "Satoshi", sans-serif;
     font-size: 16px;
-    font-style: normal;
     font-weight: 500;
-    line-height: normal;
-    cursor: pointer; /* Add pointer for better UX */
-    text-align: center;
-}
-
+    cursor: pointer;
+  }
+  
 
                                     /* BROWSE BY DRESS STYLE */
 
 
 
 /* Container for the section */
+/* Container for the section */
 .browse-style-container {
-    padding: 20px;
-    border-radius: 40px;
-background: #F0F0F0;
-    text-align: center;
-    max-width: 1239px;
-    margin: 20px auto;
-    font-family: Arial, sans-serif;
-  }
-  
-  /* Title styling */
-  .title {
-    color: #000;
+  margin-top: 80px;
+  padding: 20px;
+  border-radius: 40px;
+  background: #F0F0F0;
+  text-align: center;
+  max-width: 1239px;
+  margin: 20px auto;
+}
+
+/* Title styling */
+.title {
+  padding-top: 70px;
+  color: #000;
 text-align: center;
 font-family: "Integral CF";
 font-size: 48px;
 font-style: normal;
 font-weight: 700;
 line-height: normal;
-padding-top: 70px;
-  }
-  
-  /* Grid container using Flexbox */
-  .grid-container {
-    display: flex;
-    position: relative;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    padding-top: 70px;
-  }
-  
-  /* Each item in the grid */
-  .grid-item {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    flex: 1 1 calc(50% - 20px);  /*Each item takes half the container width minus the gap */
-    max-width: 45%; /* Limit the maximum width */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    overflow: hidden;
-    background-color: #ffffff; /* White background for items */
-  }
-  
-  
-  /* Images inside the grid */
-  .grid-item img {
-    width: 100%;
-    height: auto;
-    display: block;
-  }
-  
-  /* Text below the images */
-  .grid-item p {
-    position: absolute;
-    left:10px;
-    font-size: 18px;
-    font-weight: 500;
-    margin: 10px 0;
-    color: #333;
-  }
+}
+
+/* Grid container */
+.grid-container {
+  /* width: 1000px; */
+  margin-top: 64px;
+  display: grid;
+  padding: 0px 64px 76px 64px;
+  grid-template-columns: repeat(3, 1fr); /* Three equal columns */
+  gap: 20px;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+/* Grid items */
+.grid-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  /* height: 300px;  */
+}
+
+/* Images inside the grid items */
+.grid-item img {
+   /* Occupies 70% of the item's height */
+  object-fit: cover; /* Ensures the image fills its container without distortion */
+  border-bottom: 2px solid #ddd;
+}
+
+/* Grid span classes */
+.col-span-1 {
+  grid-column: span 1;
+}
+.col-span-2 {
+  grid-column: span 2;
+}
+
+/* Text below the images */
+.grid-item h5 {
+ position: absolute;
+ left: 35px;
+ top: 19px;
+ color: #000;
+font-family: Satoshi;
+font-size: 36px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+.casual img{
+  width: 415px;
+/* height: 416px; */
+flex-shrink: 0;
+
+object-fit: cover;
+}
+.formal img{
+  width: 800px;
+/* height: 416px; */
+flex-shrink: 0;
+}
+.party img{
+  width: 800px;
+  /* height: 416px; */
+  flex-shrink: 0;
+}
+.gym img{
+  width: 415px;
+/* height: 416px; */
+flex-shrink: 0;
+}
 
 
                                 /* review Section */
@@ -808,9 +840,10 @@ line-height: normal;
   
   
   .name-verified {
+    
     display: flex;
-align-items: center;
-gap: 4px;
+    align-items: center;
+   gap: 4px;
   }
   .customer1 div p{
     color: rgba(0, 0, 0, 0.60);
@@ -830,23 +863,26 @@ line-height: 22px; /* 137.5% */
 
 
 
-                                                    /* Footer */
+    /* Footer */
     .footer-container {
         position: relative;
-        padding-top: 500.42px;
+        /* display: flex
+    ; */
+       
         width: 100%;
         max-width: 1440px;
         height: auto;
         flex-shrink: 0;
         margin: 0 auto;
+        margin-top: 170px;
         background: #F0F0F0;
     }
     
     .newslatter {
         position: absolute;
         top: -50px;
-        left: 50%; /* Position relative to the center */
-        transform: translateX(-50%); /* Shift it back by half its width */
+        left: 50%;
+        transform: translateX(-50%); 
         display: flex;
         width: 1240px;
         padding: 36px 64px;
@@ -877,27 +913,184 @@ font-weight: 700;
 line-height: 45px; /* 112.5% */
     }
     
-    .inputs input {
-        padding: 10px;
+    .inputs {
+        display: flex;
+        flex-direction: column;
+        width: 349px;
+        gap: 12px;
+        position: relative;
+      }
+      
+      .icon-letter {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        background: #fff;
+        padding: 12px 16px;
+        border-radius: 62px;
         border: 1px solid #ccc;
-        border-radius: 5px;
-        margin-right: 10px;
+        width: 100%;
+      }
+      
+      .icon-letter svg {
+        flex-shrink: 0;
+      }
+      
+      .icon-letter input {
         flex: 1;
+        border: none;
+        outline: none;
+        background: transparent;
+        font-size: 14px;
+      }
+      
+      button {
+        color: #000;
+font-family: Satoshi;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+      }
+      
+      button:hover {
+        background-color: #0056b3;
+      }
+      
+    .icon-letter{
+        display: flex;
+        gap: 12;
     }
     
     .inputs button {
         padding: 10px 20px;
-        background-color: #007bff;
-        color: #fff;
+        background: #FFF;
+        color: #000000;
         border: none;
         border-radius: 5px;
         cursor: pointer;
+        border-radius: 62px;
+background: #FFF;
+    }
+    .logo-info-footer{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .footer-info-container {
+        padding-left: 101px;
+        display: flex;
+        gap: 100px; /* Adjust the value as per your spacing needs */
+        padding-top: 190px;
+        /* width: 1441px; */
+        height: 499px;
+        flex-shrink: 0;
     }
     
     
+.footer-logo{
+    color: #000;
+leading-trim: both;
+text-edge: cap;
+font-family: "Integral CF";
+font-size: 33.455px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+.logo-info-footer p{
+    color: rgba(0, 0, 0, 0.60);
+font-family: Satoshi;
+font-size: 14px;
+width: 248px;
+font-style: normal;
+font-weight: 400;
+padding-top: 25px;
+line-height: 22px; /* 157.143% */
+}
+.logo-info-footer svg{
+    margin-top: 35px;
+}
+.company-footer{
+  
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+}
+.pages-footer{
+    padding-top: 25px;
+    height: 133px;
+    max-width: 104px;
+    /* grid-area: 26px; */
+    display: flex;
+    flex-direction: column;
+    color: rgba(0, 0, 0, 0.60);
+font-family: Satoshi;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 19px; /* 118.75% */
+}
 
+.company-others-footer{
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 26px;
+}
+.about-features-work{
+    max-width: 150px;
+    height: 133px;
+color: rgba(0, 0, 0, 0.60);
+font-family: Satoshi;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 19px; /* 118.75% */
+    gap: 13px;
+}
+.company-others-footer h6{
+    color: #000;
+font-family: Satoshi;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 18px; /* 112.5% */
+letter-spacing: 3px;
+text-transform: uppercase;
+}
+.footer-line{
+    margin-top: 50px;
+    /* width: 1240px; */
+    padding-left: -100px;
+      height: 1px;
+background: rgba(0, 0, 0, 0.10);
+}
+.copyreserved {
+    margin-top: 25px;
+    display: flex;
+    width: 1345px;
+    justify-content: space-between;
+    padding-left: 101px;
+}
+.co{
+color: rgba(0, 0, 0, 0.60);
+font-family: Satoshi;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.copyreserved img{
+    display: inline-flex;
+    align-items: flex-end;
+    gap: 12px;
+    width: 220px;
+    height: 44px;
+    padding-right: 20px;
 
-
+}
   
   
   
