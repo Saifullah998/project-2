@@ -438,18 +438,21 @@ background: #F0F0F0;
 }
 
   
-  .container button {
-    display: flex;
-    width: 210px;
-    margin-top: 32px;
-    height: 52px;
-    padding: 16px 20px; /* Adjusted padding for balance */
-    justify-content: center;
-    align-items: center;
-    gap: 12px;
-    border-radius: 62px;
-    background: #000;
-  }
+.container button {
+  margin-top: 32px;
+  display: flex;
+  width: 210px;
+  height: 52px;
+  padding: 16px 54px;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+  border-radius: 62px;
+  background: #000;
+  border: none;  /* Remove the border (stroke) */
+}
+
   
   .container button a {
     color: #fff;
@@ -1106,6 +1109,7 @@ align-items: flex-start;
 gap: 26px;
 }
 .about-features-work{
+  cursor: pointer;
     max-width: 153px;
     height: 133px;
 color: rgba(0, 0, 0, 0.60);
