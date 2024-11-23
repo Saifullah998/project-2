@@ -395,6 +395,7 @@ background: #F0F0F0;
     height: auto; /* Adjust height dynamically */
     position: relative;
     padding: 20px 0; /* Optional: Add spacing */
+    width: 100%;
   }
   
   .container {
@@ -491,26 +492,28 @@ line-height: 22px; /* 137.5% */
     position: relative;
     width: 50%; /* Matches the content width */
   }
+  .hero-image span{
+    
+  }
   .hero-icon1 {
     width: 56px;
 height: 56px;
 flex-shrink: 0;
     position: absolute;
-    left: -152px;
+    left: 0px;
     top: 370px;
-    width: 50%; /* Matches the content width */
   }
 
   .hero-icon2 {
     
     position: absolute;
-     right: -54px; 
+     right: 0px; 
      top: 100px; 
-    width: 50%; 
   }
   .line img{
+    margin-top: 11px;
     width: 1px;
-    height: 74px;
+    height: 92px;
     background: rgba(0, 0, 0, 0.10);
   }
   
@@ -617,6 +620,22 @@ flex-shrink: 0;
     display: flex;
     align-items: flex-start;
     gap: 10px;
+  }
+  .revies-star p{
+    color: #000;
+font-family: Satoshi;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+  }
+  .revies-star p span{
+    color: rgba(0, 0, 0, 0.60);
+font-family: Satoshi;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
   }
   
   .card1 h5 {
@@ -905,18 +924,22 @@ line-height: 22px; /* 137.5% */
 
     /* Footer */
     .footer-container {
-        position: relative;
-        /* display: flex
-    ; */
-       
-        width: 100%;
-        /* max-width: 1440px; */
-        height: auto;
-        flex-shrink: 0;
-        margin: 0 auto;
-        margin-top: 170px;
-        background: #F0F0F0;
+      position: relative;
+      
+      
+      display: flex;
+      flex-direction: column; 
+      
+      width: 100%;
+      /* max-width: 1440px; */
+      height: auto;
+      flex-shrink: 0; /* Prevent shrinking if using flexbox */
+      margin: 0 auto;
+      margin-top: 170px; /* Adjust top margin to position the footer properly */
+      background: #F0F0F0;
     }
+    
+    
     
     .newslatter {
         position: absolute;
@@ -931,6 +954,9 @@ line-height: 22px; /* 137.5% */
         align-items: center;
         border-radius: 20px;
         background: #000;
+    }
+    .footer-info-container{
+      margin: auto;
     }
     
     
@@ -1018,7 +1044,7 @@ background: #FFF;
         align-items: flex-start;
     }
     .footer-info-container {
-        padding-left: 54px;
+        padding-left: 0px;
         display: flex;
         gap: 116px; /* Adjust the value as per your spacing needs */
         padding-top: 190px;
@@ -1080,7 +1106,7 @@ align-items: flex-start;
 gap: 26px;
 }
 .about-features-work{
-    max-width: 150px;
+    max-width: 153px;
     height: 133px;
 color: rgba(0, 0, 0, 0.60);
 font-family: Satoshi;
@@ -1109,6 +1135,7 @@ background: rgba(0, 0, 0, 0.10);
 }
 .copyreserved {
     margin-top: 25px;
+    margin:auto;
     display: flex;
     width: 1345px;
     justify-content: space-between;
@@ -1118,19 +1145,29 @@ background: rgba(0, 0, 0, 0.10);
 color: rgba(0, 0, 0, 0.60);
 font-family: Satoshi;
 font-size: 14px;
+margin-left: -49px;
 font-style: normal;
 font-weight: 400;
 line-height: normal;
 }
 .copyreserved img{
-    display: inline-flex;
+    /* display: inline-flex;
     align-items: flex-end;
     gap: 12px;
-    width: 220px;
-    height: 44px;
-    padding-right: 47px;
+    width: 291px;
+    height: 41px;
+    padding-right: 47px; */
 
 }
   
   
-  
+.payment-icons{
+  display: flex;
+  gap: 12;
+  padding-right: 45px;
+}
+.payment-icons img{
+  width: 46.614px;
+height: 30.03px;
+
+}
