@@ -488,7 +488,25 @@ font-weight: 400;
 line-height: 22px; /* 137.5% */
   }
   .hero-image {
+    position: relative;
     width: 50%; /* Matches the content width */
+  }
+  .hero-icon1 {
+    width: 56px;
+height: 56px;
+flex-shrink: 0;
+    position: absolute;
+    left: -152px;
+    top: 370px;
+    width: 50%; /* Matches the content width */
+  }
+
+  .hero-icon2 {
+    
+    position: absolute;
+     right: -54px; 
+     top: 100px; 
+    width: 50%; 
   }
   .line img{
     width: 1px;
@@ -500,6 +518,7 @@ line-height: 22px; /* 137.5% */
     width: 100%; /* Ensures image scales with its container */
     height: auto; /* Keeps aspect ratio */
     display: block; /* Removes inline spacing below images */
+    margin-bottom: -20px;
     object-fit: cover; /* Ensures proper scaling */
   }
 
@@ -572,14 +591,14 @@ line-height: 22px; /* 137.5% */
     max-width: 296px; /* Prevent cards from exceeding this width */
     flex: 1 1 calc(25% - 20px); /* Flex properties for responsiveness */
     height: auto;
-    background: #f9f9f9;
+    /* background: #f9f9f9; */
     padding: 0;
   }
   
   .card1 img {
     width: 100%; /* Adjust image width to the card */
     max-width: 295px;
-    height: auto; /* Maintain aspect ratio */
+    height: 300px; /* Maintain aspect ratio */
     border-radius: 20px;
     background: #F0EEED;
     margin: 0 auto 16px;
@@ -591,7 +610,7 @@ line-height: 22px; /* 137.5% */
     font-size: 20px;
     font-weight: 700;
     margin: 16px 0;
-    text-align: center;
+    text-align: justify;
   }
   
   .revies-star {
@@ -748,7 +767,7 @@ font-weight: 700;
 line-height: normal;
 }
 .casual img{
-  width: 415px;
+  width: 476px;
 /* height: 416px; */
 flex-shrink: 0;
 
@@ -760,12 +779,12 @@ object-fit: cover;
 flex-shrink: 0;
 }
 .party img{
-  width: 800px;
+  width: 862px;
   /* height: 416px; */
   flex-shrink: 0;
 }
 .gym img{
-  width: 415px;
+  width: 476px;
 /* height: 416px; */
 flex-shrink: 0;
 }
@@ -860,13 +879,6 @@ margin-left: -20px;
   }
   
   
-  
-  .name-verified {
-    
-    display: flex;
-    align-items: center;
-   gap: 4px;
-  }
   .customer1 div p{
     color: rgba(0, 0, 0, 0.60);
 font-family: Satoshi;
@@ -875,6 +887,12 @@ font-style: normal;
 font-weight: 400;
 line-height: 22px; /* 137.5% */
   }
+  .name-verified {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+  
   .name-verified h5 {
     margin: 0; /* Removes default margin for the name */
   }
@@ -882,7 +900,7 @@ line-height: 22px; /* 137.5% */
   .name-verified svg {
     flex-shrink: 0; /* Prevents SVG from shrinking */
   }
-
+  
 
 
     /* Footer */
@@ -892,7 +910,7 @@ line-height: 22px; /* 137.5% */
     ; */
        
         width: 100%;
-        max-width: 1440px;
+        /* max-width: 1440px; */
         height: auto;
         flex-shrink: 0;
         margin: 0 auto;
